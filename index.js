@@ -16,8 +16,14 @@ inputBtn.addEventListener("click", function(){
 function renderLeads () {
     let listItems = "";
     for (let i = 0; i < myLeads.length; i++) {
-        // listItems = "<li><a target='_blank' href = 'https://" + myLeads[i] + "'>" + myLeads[i] + "</a></li>";
-        listItems = `<li><a target='_blank' href = 'https://${myLeads[i]}' > ${myLeads[i]} </a></li>`;
+      // "https://" added to href so that the link will work while the file is saved on local 
+        listItems = `
+                    <li>
+                    <a target='_blank' href='https://${myLeads[i]}'>
+                        ${myLeads[i]}
+                    </a>
+                    </li>
+                    `;
         }
         ulEl.innerHTML += listItems;
 }
