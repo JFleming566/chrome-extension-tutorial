@@ -15,11 +15,10 @@ inputBtn.addEventListener("click", function(){
 
 function renderLeads () {
     let listItems = "";
-    for (let i = 0; i < myLeads.length; i++) {
-      // "https://" added to href so that the link will work while the file is saved on local 
+    for (let i = 0; i < myLeads.length; i++) { 
         listItems = `
                     <li>
-                    <a target='_blank' href='https://${myLeads[i]}'>
+                    <a target='_blank' href='${myLeads[i]}'>
                         ${myLeads[i]}
                     </a>
                     </li>
