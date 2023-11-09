@@ -9,7 +9,6 @@ input {
     width: 100%;
     padding: 10px;
     border: 2px solid #5f9341;
-    /* border-color: #5f9341; */
     box-sizing: border-box;
     margin-bottom: 2px;
 }
@@ -17,11 +16,15 @@ input {
 button {
     background: #5f9341;
     color: white;
-    border: none;
-    /* font-size: 10px; */
     font-weight: bold;
     padding: 10px 20px;
     margin-top: 2px;
+    border: 1px solid #5f9341;
+}
+
+#delete-btn {
+    background: white;
+    color: #5f9341;
 }
 
 #ul-el {
