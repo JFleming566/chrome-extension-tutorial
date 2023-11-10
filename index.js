@@ -45,15 +45,12 @@ deleteBtn.addEventListener("dblclick", function() {
 
 //--------------------
 
-// const tabs = [{url: "https://www.linkedin.com/in/per-harald-borgen/"}];
-
 tabBtn.addEventListener("click", function() {
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      console.log(tabs);
-      });
-
+    //   console.log(tabs);
     myLeads.push(tabs[0].url);
     localStorage.setItem("myLeads", JSON.stringify(myLeads));
     render(myLeads);
+      });
 })
